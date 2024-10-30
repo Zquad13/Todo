@@ -1,0 +1,171 @@
+.todo-register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    min-height: 70vh;
+    
+    width: 100%;
+    background: linear-gradient(135deg, #310e76 0%, #e2e8f0 100%);
+    background-image: url("../assets/reg.webp");
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    overflow: auto; 
+    padding: 20px;
+}
+
+.todo-register-form {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    /* margin: 20px; */
+    animation: fadeIn 0.5s ease-out;
+    margin-top: 100px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.todo-register-header {
+    text-align: center;
+    /* margin-bottom: 2rem; */
+}
+
+.todo-register-title {
+    color: #2563eb;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
+.todo-register-subtitle {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.todo-input-group {
+    margin-bottom: 1.5rem;
+}
+
+.todo-input-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #334155;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.todo-input-field {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    background-color: #f8fafc;
+}
+
+.todo-input-field:focus {
+    outline: none;
+    border-color: #2563eb;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.todo-input-field::placeholder {
+    color: #94a3b8;
+}
+
+.todo-register-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: .5rem;
+    height: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.todo-register-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.todo-register-button:active {
+    transform: translateY(0);
+}
+
+.todo-register-button:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.todo-auth-links {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.todo-auth-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.todo-auth-link:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.todo-error-message {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 0.5rem;
+    display: block;
+    text-align: center;
+    padding: 8px;
+    background-color: #fef2f2;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+    .todo-register-form {
+        padding: 1.5rem;
+        margin: 16px;
+    }
+    
+    .todo-register-title {
+        font-size: 24px;
+    }
+}
